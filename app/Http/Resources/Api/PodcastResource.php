@@ -2,17 +2,17 @@
 
 namespace App\Http\Resources\Api;
 
-
 use App\Traits\ApiResponseValidationTrait;
-use App\Model\PodCast;
+
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\Roles\PodcastRole;
+use Illuminate\Support\Facades\Log;
 
 
 class PodcastResource extends JsonResource
 {
-
-    use ApiResponseValidationTrait;
+    use ApiResponseValidationTrait, PodcastRole;
 
     /**
      * Transform the resource into an array.
@@ -22,6 +22,7 @@ class PodcastResource extends JsonResource
      */
     public function toArray($request)
     {
+
         $response = [
             'id' => $this->id,
             'slug' => $this->slug,
@@ -29,11 +30,9 @@ class PodcastResource extends JsonResource
             'description' => $this->description,
             'mp3' => $this->file_mp3,
             'ogg' => $this->file_ogg,
+
         ];
-        if ($this->validateResponse($response, PodCast::$rule)) {
-            return $this->validateResponse($response, PodCast::$rule);
-        }
-        return $response;
+        return $this->validateResponse($response, $this->roles());
 
     }
 

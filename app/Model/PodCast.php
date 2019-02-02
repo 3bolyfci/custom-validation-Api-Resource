@@ -8,7 +8,5 @@ use Illuminate\Support\Facades\Route;
 class PodCast extends Model
 {
     protected $table = 'podcasts';
-    public static $rule = [
-        'id' => 'required'
-    ];
+
 }

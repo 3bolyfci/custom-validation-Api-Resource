@@ -24,6 +24,7 @@ trait ApiResponseValidationTrait
         if ($validtor->errors()->isEmpty()) {
             return null;
         }
-        return json_decode($validtor->getMessageBag());
+        $error = $validtor->getMessageBag()->toArray();
+        return array_merge($responseArray, ['validation' => $error]);
     }
 }
