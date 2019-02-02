@@ -22,7 +22,7 @@ trait ApiResponseValidationTrait
             $responseArray, $rules, $messages, $customAttributes
         );
         if ($validtor->errors()->isEmpty()) {
-            return null;
+            return $responseArray;
         }
         $error = $validtor->getMessageBag()->toArray();
         return array_merge($responseArray, ['validation' => $error]);
