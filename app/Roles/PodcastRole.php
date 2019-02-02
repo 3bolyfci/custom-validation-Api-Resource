@@ -7,16 +7,16 @@ namespace App\Roles;
  * Date: 02/02/2019
  * Time: 08:42 م
  */
-trait PodcastRole
+class PodcastRole
 {
 
-    public function roles()
+    public static function roles()
     {
         return [
-            'id' => 'required|string',
+            'id' => 'required',
             'title' => 'required|string',
             'slug' => 'required|string',
-            'description' => 'required|string|min:1|max:5',
+            'description' => 'required|string|min:1',
             'mp3' => 'url',
             'ogg' => 'url',
         ];

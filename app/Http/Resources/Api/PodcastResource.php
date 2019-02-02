@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Log;
 
 class PodcastResource extends JsonResource
 {
-    use ApiResponseValidationTrait, PodcastRole;
+    use ApiResponseValidationTrait;
 
     /**
      * Transform the resource into an array.
@@ -32,7 +32,7 @@ class PodcastResource extends JsonResource
             'ogg' => $this->file_ogg,
 
         ];
-        return $this->validateResponse($response, $this->roles());
+        return $this->validateResponse($response, PodcastRole::roles());
 
     }
 
