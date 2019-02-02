@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc1eaf72-c2e5-4c36-93d2-1ec13d696795" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/Http/Middleware/Cors.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Api/PodcastResource.php" afterPath="$PROJECT_DIR$/app/Http/Resources/Api/PodcastResource.php" />
-      <change beforePath="$PROJECT_DIR$/app/Roles/PodcastRole.php" afterPath="$PROJECT_DIR$/app/Roles/PodcastRole.php" />
-    </list>
+    <list default="true" id="fc1eaf72-c2e5-4c36-93d2-1ec13d696795" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -270,12 +264,12 @@
       <workItem from="1549116405270" duration="3125000" />
       <workItem from="1549122267428" duration="5958000" />
       <workItem from="1549131471894" duration="1753000" />
-      <workItem from="1549134150364" duration="4163000" />
+      <workItem from="1549134150364" duration="4761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17387000" />
+    <option name="totallyTimeSpent" value="17985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
